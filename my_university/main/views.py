@@ -3,7 +3,13 @@ from django.http import HttpResponse
 
 def get_layout(title, content):
     menu = """
-    
+    <style>
+        body { background: lightblue; font-family: sans-serif; padding: 20px; }
+        nav { margin-bottom: 20px; background: white; padding: 10px; border-radius: 5px; }
+        a { margin-right: 15px; text-decoration: none; color: blue; font-weight: bold; }
+        table { border-collapse: collapse; background: white; margin-top: 10px; }
+        th, td { border: 1px solid black; padding: 10px; }
+    </style>
     <nav>
         <a href="/">Головна</a>
         <a href="/about/">Про нас</a>
